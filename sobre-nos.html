@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós | Loucos por Vitrola</title>
+  <meta name="description" content="Conheça a história da Loucos por Vitrola em Santo André - SP, nossa paixão por vinil e os especialistas André Denani e Emilio Colonic.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sobre Nós | Loucos por Vitrola">
+  <meta property="og:description" content="Nossa história, nossa oficina e a dedicação artesanal de André Denani e Emilio Colonic em trazer equipamentos vintage de volta à vida.">
+  <meta property="og:image" content="assets/logo/logo-loucos-por-vitrola.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo/logo-loucos-por-vitrola.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-wine': '#701814',
+            'brand-wine-dark': '#4A0D0D',
+            'brand-wine-deep': '#2E0808',
+            'brand-wine-bright': '#8C211B',
+            'brand-black': '#080808',
+            'brand-black-soft': '#121010',
+            'brand-black-card': '#171414',
+            'brand-cream': '#F1DFA5',
+            'brand-cream-light': '#F7EBC5',
+            'brand-cream-muted': '#D8C795',
+            'brand-gold': '#C5A24A',
+            'brand-gold-dark': '#9A7B2C',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            script: ['"Italianno"', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-brand-black text-brand-cream-light antialiased flex flex-col min-h-screen">
+
+  <!-- Top bar vintage info -->
+  <div class="bg-brand-wine-deep/95 border-b border-brand-gold/20 py-1.5 px-4 text-xs text-brand-cream/80 text-center flex flex-wrap items-center justify-center gap-4 sm:gap-8">
+    <span class="flex items-center gap-1.5">
+      <i class="fa-solid fa-location-dot text-brand-gold"></i> Santo André, ABC Paulista – SP
+    </span>
+    <span class="hidden sm:inline text-brand-gold/40">•</span>
+    <span class="flex items-center gap-1.5">
+      <i class="fa-solid fa-shield-halved text-brand-gold"></i> Equipamentos revisados com 90 dias de garantia
+    </span>
+    <span class="hidden md:inline text-brand-gold/40">•</span>
+    <span class="hidden md:flex items-center gap-1.5">
+      <i class="fa-solid fa-truck-fast text-brand-gold"></i> Envio seguro para todo o Brasil
+    </span>
+  </div>
+
+  <!-- Header -->
+  <header id="main-header" class="sticky top-0 z-50 bg-brand-black-soft/90 backdrop-blur border-b border-brand-gold/25 py-3 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      
+      <a href="index.html" class="flex items-center gap-3 group" aria-label="Loucos por Vitrola - Início">
+        <img src="assets/logo/logo-loucos-por-vitrola.png" alt="Logotipo Loucos por Vitrola" class="h-14 sm:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+        <div class="hidden sm:block">
+          <span class="block font-serif text-lg font-bold tracking-wide text-brand-cream-light leading-none">Loucos por Vitrola</span>
+          <span class="text-[11px] uppercase tracking-widest text-brand-gold font-medium">A arte em tocar discos</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center space-x-7 text-xs uppercase tracking-widest font-semibold" aria-label="Navegação Principal">
+        <a href="index.html" class="nav-link py-1 hover:text-brand-gold transition-colors">Início</a>
+        <a href="sobre-nos.html" class="nav-link py-1 hover:text-brand-gold transition-colors active">Sobre Nós</a>
+        <a href="servicos.html" class="nav-link py-1 hover:text-brand-gold transition-colors">Serviços</a>
+        <a href="galeria.html" class="nav-link py-1 hover:text-brand-gold transition-colors">Galeria</a>
+        <a href="produtos.html" class="nav-link py-1 hover:text-brand-gold transition-colors flex items-center gap-1.5">
+          <span>Produtos</span>
+          <span class="bg-brand-wine text-[10px] text-brand-cream px-1.5 py-0.2 rounded font-normal">Loja</span>
+        </a>
+        <a href="contato.html" class="nav-link py-1 hover:text-brand-gold transition-colors">Contato</a>
+      </nav>
+
+      <div class="flex items-center space-x-3 sm:space-x-4">
+        <button class="cart-trigger-btn relative p-2.5 rounded-full text-brand-cream-light hover:text-brand-gold hover:bg-brand-black-card border border-brand-gold/25 transition-all" aria-label="Abrir carrinho de compras">
+          <i class="fa-solid fa-cart-shopping text-base"></i>
+          <span class="cart-badge-count absolute -top-1.5 -right-1.5 bg-brand-wine text-white text-[10px] font-bold w-5 h-5 rounded-full border border-brand-gold flex items-center justify-center" style="display: none;">0</span>
+        </button>
+
+        <a href="https://wa.me/5511996176660" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 btn-whatsapp text-xs uppercase px-4 py-2 rounded font-semibold tracking-wider">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>WhatsApp</span>
+        </a>
+
+        <button id="mobile-menu-toggle" class="lg:hidden p-2 rounded text-brand-cream hover:text-brand-gold focus:outline-none" aria-label="Abrir menu">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu-backdrop" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
+    <div id="mobile-menu-drawer" class="fixed top-0 left-0 bottom-0 w-4/5 max-w-sm bg-brand-black-card border-r border-brand-gold/30 p-6 flex flex-col justify-between -translate-x-full transition-transform duration-300 ease-out">
+      <div>
+        <div class="flex items-center justify-between pb-5 border-b border-brand-gold/20">
+          <div class="flex items-center gap-2">
+            <img src="assets/logo/logo-loucos-por-vitrola.png" alt="Loucos por Vitrola" class="h-10 w-auto">
+            <div>
+              <span class="block font-serif text-sm font-bold text-brand-cream-light">Loucos por Vitrola</span>
+              <span class="text-[9px] uppercase tracking-wider text-brand-gold">A arte em tocar discos</span>
+            </div>
+          </div>
+          <button id="mobile-menu-close" class="text-brand-cream/60 hover:text-brand-cream text-lg p-1" aria-label="Fechar menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <nav class="mt-6 flex flex-col space-y-4 uppercase tracking-widest text-xs font-semibold">
+          <a href="index.html" class="mobile-nav-link py-2 border-b border-white/5 hover:text-brand-gold">Início</a>
+          <a href="sobre-nos.html" class="mobile-nav-link py-2 border-b border-white/5 text-brand-gold font-bold">Sobre Nós</a>
+          <a href="servicos.html" class="mobile-nav-link py-2 border-b border-white/5 hover:text-brand-gold">Serviços</a>
+          <a href="galeria.html" class="mobile-nav-link py-2 border-b border-white/5 hover:text-brand-gold">Galeria</a>
+          <a href="produtos.html" class="mobile-nav-link py-2 border-b border-white/5 hover:text-brand-gold flex items-center justify-between">
+            <span>Produtos</span>
+            <span class="bg-brand-wine text-[10px] text-brand-cream px-2 py-0.5 rounded">Catálogo</span>
+          </a>
+          <a href="contato.html" class="mobile-nav-link py-2 hover:text-brand-gold">Contato</a>
+        </nav>
+      </div>
+
+      <div class="pt-6 border-t border-brand-gold/20 space-y-3">
+        <a href="https://wa.me/5511996176660" target="_blank" rel="noopener noreferrer" class="btn-whatsapp w-full py-2.5 px-4 rounded text-center text-xs uppercase font-semibold flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>Falar no WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main class="flex-grow">
+    
+    <!-- PAGE HERO -->
+    <section class="py-16 sm:py-20 bg-gradient-to-b from-brand-wine-dark/70 via-brand-black-soft to-brand-black border-b border-brand-gold/20 text-center relative overflow-hidden">
+      <div class="max-w-4xl mx-auto px-4 relative z-10 space-y-3">
+        <span class="text-xs uppercase tracking-widest text-brand-gold font-semibold">Institucional</span>
+        <h1 class="font-serif text-4xl sm:text-5xl font-extrabold text-brand-cream-light">
+          Sobre a Loucos por Vitrola
+        </h1>
+        <p class="font-script-accent text-3xl sm:text-4xl text-brand-gold">
+          Nossa história e nossa paixão pelos discos
+        </p>
+        <div class="gold-divider max-w-xs mx-auto">
+          <span>✦ ✦ ✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: HISTÓRIA REAL -->
+    <section class="py-20 bg-brand-black border-b border-brand-gold/20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-7 space-y-6">
+            <span class="text-xs uppercase tracking-widest text-brand-gold font-semibold">Origem & Evolução</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-cream-light leading-snug">
+              Como a Loucos por Vitrola surgiu?
+            </h2>
+            
+            <div class="space-y-5 text-brand-cream/85 text-base sm:text-lg leading-relaxed font-light">
+              <p>
+                No começo era um hobby: fazíamos alguns serviços e manutenções em nossos próprios equipamentos e para amigos e parentes colecionadores.
+              </p>
+              <p>
+                Mas o tempo foi passando, e mais e mais pessoas viram o quanto colocávamos o coração em nosso trabalho. Fomos nos profissionalizando, aumentando a gama de serviços e chegamos a um nível de excelência de deixar muitos cabeças brancas de orelha em pé!
+              </p>
+              <p class="border-l-2 border-brand-gold pl-4 italic text-brand-cream-light">
+                "A paixão por toca-discos é levada a sério. Curtimos nossos aparelhos e preparamos todos os equipamentos que restauramos exatamente como se fossem para nosso uso particular."
+              </p>
+              <p>
+                Em 2016 formalizamos a marca <strong class="text-brand-gold">Loucos por Vitrola</strong> em Santo André, no Grande ABC Paulista. Desde então, nos especializamos nas marcas mais emblemáticas do mundo e do Brasil: Garrard, Gradiente, Technics, Kenwood, Philips, Sony, Pioneer, CCE e muito mais.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 relative">
+            <div class="vintage-card p-3 rounded-xl border border-brand-gold/30 shadow-2xl">
+              <img 
+                src="assets/images/garrard-6300.jpg" 
+                alt="Equipamento Garrard Restaurado na Oficina" 
+                class="rounded-lg w-full h-[380px] object-cover"
+                loading="lazy"
+              />
+              <div class="p-4 text-center">
+                <span class="font-serif text-base font-bold text-brand-cream-light block">Loucos por Vitrola</span>
+                <span class="text-xs text-brand-gold">Santo André • ABC Paulista • Desde 2016</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: OS LOUCOS (André Denani & Emilio Colonic) -->
+    <section class="py-20 bg-brand-black-soft border-b border-brand-gold/20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+          <span class="text-xs uppercase tracking-widest text-brand-gold font-semibold">Os Fundadores & Especialistas</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-cream-light">
+            Conheça "Os Loucos"!
+          </h2>
+          <div class="gold-divider max-w-xs mx-auto">
+            <span>✦</span>
+          </div>
+          <p class="text-sm text-brand-cream/70">
+            A combinação rara entre engenharia eletrônica de precisão e marcenaria artística de restauração.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          
+          <!-- André Denani -->
+          <div class="vintage-card rounded-xl p-8 flex flex-col sm:flex-row gap-6 items-center sm:items-start border border-brand-gold/25">
+            <div class="w-36 h-36 flex-shrink-0 rounded-full overflow-hidden border-2 border-brand-gold shadow-xl bg-brand-black">
+              <img 
+                src="assets/images/andre-denani.jpg" 
+                alt="André Luis Denani - Loucos por Vitrola" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+                onerror="this.src='assets/logo/logo-loucos-por-vitrola.png'"
+              />
+            </div>
+            <div class="space-y-3 text-center sm:text-left">
+              <div class="border-b border-brand-gold/20 pb-2">
+                <h3 class="font-serif text-2xl font-bold text-brand-cream-light">André Luis Denani</h3>
+                <span class="text-xs uppercase tracking-widest text-brand-gold font-semibold">Técnico Eletrônico & Tecnólogo em T.I.</span>
+              </div>
+              <p class="text-sm text-brand-cream/80 leading-relaxed">
+                Um amante das antigas! Desde pequeno escutando bolachões de rock da melhor qualidade, colecionador inveterado e apaixonado por toca-discos Garrard’s (entre outras maravilhas… hehe).
+              </p>
+              <p class="text-sm text-brand-cream/80 leading-relaxed">
+                É o responsável pelo contato e atendimento próximo ao cliente, cumprimento rigoroso de prazos nas vendas e manutenções, busca incessante por peças raras e originais e, claro, todas as intervenções eletrônicas de alta precisão na bancada.
+              </p>
+            </div>
+          </div>
+
+          <!-- Emilio Colonic -->
+          <div class="vintage-card rounded-xl p-8 flex flex-col sm:flex-row gap-6 items-center sm:items-start border border-brand-gold/25">
+            <div class="w-36 h-36 flex-shrink-0 rounded-full overflow-hidden border-2 border-brand-gold shadow-xl bg-brand-black">
+              <img 
+                src="assets/images/emilio-colonic.jpg" 
+                alt="Emilio Colonic - Loucos por Vitrola" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+                onerror="this.src='assets/logo/logo-loucos-por-vitrola.png'"
+              />
+            </div>
+            <div class="space-y-3 text-center sm:text-left">
+              <div class="border-b border-brand-gold/20 pb-2">
+                <h3 class="font-serif text-2xl font-bold text-brand-cream-light">Emilio Colonic</h3>
+                <span class="text-xs uppercase tracking-widest text-brand-gold font-semibold">Artesão & Restaurador de Precisão</span>
+              </div>
+              <p class="text-sm text-brand-cream/80 leading-relaxed">
+                Além de Louco por Vitrola e amante confesso das clássicas Gradientes, o Emilio é um verdadeiro artista. Vindo da restauração automotiva de carros antigos (mecânica pesada e pintura em estufa), hoje se dedica em tempo integral a estudar e trazer vida a estes equipamentos históricos.
+              </p>
+              <p class="text-sm text-brand-cream/80 leading-relaxed">
+                Perfeccionista absoluto, cuida de todo o trabalho mecânico fino, marcenaria em madeira nobre, pintura laqueada, polimento químico do acrílico e cada detalhe para deixar seu aparelho idêntico a como saiu da loja nas décadas de ouro.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: NOSSOS DIFERENCIAIS AUDIÓFILOS -->
+    <section class="py-20 bg-brand-black border-b border-brand-gold/20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+          <span class="text-xs uppercase tracking-widest text-brand-gold font-semibold">Compromisso de Bancada</span>
+          <h2 class="font-serif text-3xl font-bold text-brand-cream-light">
+            Como trabalhamos em cada projeto
+          </h2>
+          <div class="gold-divider max-w-xs mx-auto">
+            <span>✦ ✦ ✦</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <div class="vintage-card p-6 rounded-lg text-center space-y-3">
+            <div class="w-14 h-14 mx-auto rounded-full bg-brand-wine-dark/80 border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl">
+              <i class="fa-solid fa-wrench"></i>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-brand-cream-light">Restauração Fiel</h3>
+            <p class="text-xs sm:text-sm text-brand-cream/70 leading-relaxed">
+              Respeitamos o esquema original do fabricante, substituindo componentes esgotados por peças de especificação audiófila de primeira linha.
+            </p>
+          </div>
+
+          <div class="vintage-card p-6 rounded-lg text-center space-y-3">
+            <div class="w-14 h-14 mx-auto rounded-full bg-brand-wine-dark/80 border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-brand-cream-light">90 Dias de Garantia</h3>
+            <p class="text-xs sm:text-sm text-brand-cream/70 leading-relaxed">
+              Todos os equipamentos comercializados ou revisados passam por longas horas de testes de audição e contam com nossa garantia de 90 dias.
+            </p>
+          </div>
+
+          <div class="vintage-card p-6 rounded-lg text-center space-y-3">
+            <div class="w-14 h-14 mx-auto rounded-full bg-brand-wine-dark/80 border border-brand-gold/30 flex items-center justify-center text-brand-gold text-2xl">
+              <i class="fa-solid fa-box-open"></i>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-brand-cream-light">Embalagem Personalizada</h3>
+            <p class="text-xs sm:text-sm text-brand-cream/70 leading-relaxed">
+              Desenvolvemos embalagens reforçadas com amortecimento triplo para envio seguro de toca-discos delicados para todo o território nacional.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="mt-16 text-center">
+          <a href="contato.html" class="btn-primary px-8 py-3.5 rounded text-xs uppercase tracking-widest font-bold inline-flex items-center gap-2">
+            <span>Visite Nossa Oficina em Santo André</span>
+            <i class="fa-solid fa-location-dot"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SOPHISTICATED FOOTER -->
+  <footer class="bg-brand-black text-brand-cream/80 border-t border-brand-gold/25 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-brand-gold/15">
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/logo/logo-loucos-por-vitrola.png" alt="Logotipo Loucos por Vitrola" class="h-14 w-auto">
+            <div>
+              <span class="block font-serif text-lg font-bold text-brand-cream-light">Loucos por Vitrola</span>
+              <span class="text-xs uppercase tracking-widest text-brand-gold">A arte em tocar discos</span>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-brand-cream/70 leading-relaxed max-w-sm">
+            Especialistas em restauração artesanal, reparos de precisão e curadoria de toca-discos vintage das décadas de 60, 70 e 80 até os modelos atuais.
+          </p>
+          <div class="pt-2 text-xs space-y-1.5 text-brand-cream/80">
+            <p><i class="fa-solid fa-location-dot text-brand-gold mr-2"></i> Rua Brasilio Machado, 435 – Vila Príncipe de Gales, Santo André – SP</p>
+            <p><i class="fa-brands fa-whatsapp text-brand-gold mr-2"></i> (11) 99617-6660</p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-serif text-sm font-bold text-brand-cream-light uppercase tracking-wider mb-4 border-l-2 border-brand-gold pl-2">Navegação</h4>
+          <ul class="space-y-2 text-xs uppercase tracking-wider">
+            <li><a href="index.html" class="hover:text-brand-gold transition-colors">Início</a></li>
+            <li><a href="sobre-nos.html" class="hover:text-brand-gold transition-colors text-brand-gold font-bold">Sobre Nós</a></li>
+            <li><a href="servicos.html" class="hover:text-brand-gold transition-colors">Serviços</a></li>
+            <li><a href="galeria.html" class="hover:text-brand-gold transition-colors">Galeria</a></li>
+            <li><a href="produtos.html" class="hover:text-brand-gold transition-colors">Produtos</a></li>
+            <li><a href="contato.html" class="hover:text-brand-gold transition-colors">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-serif text-sm font-bold text-brand-cream-light uppercase tracking-wider mb-4 border-l-2 border-brand-gold pl-2">Atendimento</h4>
+          <div class="space-y-2 text-xs text-brand-cream/70">
+            <p class="font-medium text-brand-cream-light">Segunda a Sexta:</p>
+            <p>08:00 às 22:00</p>
+            <p class="font-medium text-brand-cream-light pt-2">Sábado e Domingo:</p>
+            <p>09:00 às 18:00</p>
+            <p class="text-[11px] text-brand-gold pt-2">Atendimento prioritário via WhatsApp.</p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-serif text-sm font-bold text-brand-cream-light uppercase tracking-wider mb-4 border-l-2 border-brand-gold pl-2">Redes Oficiais</h4>
+          <div class="flex flex-col space-y-2.5 text-xs">
+            <a href="https://www.instagram.com/loucos_por_vitrola" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-brand-gold transition-colors">
+              <i class="fa-brands fa-instagram text-base text-brand-gold"></i>
+              <span>@loucos_por_vitrola</span>
+            </a>
+            <a href="https://www.facebook.com/Loucosporvitrola/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-brand-gold transition-colors">
+              <i class="fa-brands fa-facebook text-base text-brand-gold"></i>
+              <span>Loucos por Vitrola</span>
+            </a>
+            <a href="https://wa.me/5511996176660" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-brand-gold transition-colors">
+              <i class="fa-brands fa-whatsapp text-base text-brand-gold"></i>
+              <span>(11) 99617-6660</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-brand-cream/50 gap-4">
+        <p>© 2026 Loucos por Vitrola. Todos os direitos reservados. Santo André - SP.</p>
+        <p class="flex items-center gap-2">
+          <span>A arte em tocar discos</span>
+          <span>✦</span>
+          <span>High Fidelity Vintage</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SHARED CART DRAWER MODAL -->
+  <div id="drawer-carrinho" class="drawer-backdrop fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex justify-end" aria-hidden="true">
+    <div class="drawer-content w-full sm:w-[440px] bg-brand-black-card border-l border-brand-gold/30 h-full flex flex-col justify-between shadow-2xl">
+      <div class="p-5 border-b border-brand-gold/20 flex items-center justify-between bg-brand-black-soft">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-cart-shopping text-brand-gold"></i>
+          <h3 class="font-serif text-lg font-bold text-brand-cream-light uppercase tracking-wider">
+            Seu Carrinho <span id="carrinho-drawer-qtd" class="text-brand-gold font-sans text-sm font-normal">(0)</span>
+          </h3>
+        </div>
+        <button onclick="fecharCarrinho()" class="text-brand-cream/60 hover:text-brand-cream text-lg p-1.5 transition-colors" aria-label="Fechar carrinho">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div id="carrinho-vazio" class="p-8 text-center my-auto space-y-4">
+        <i class="fa-solid fa-compact-disc text-6xl text-brand-gold/30 animate-spin-slow inline-block"></i>
+        <h4 class="font-serif text-xl font-bold text-brand-cream-light">Seu carrinho está vazio</h4>
+        <p class="text-sm text-brand-cream/70 max-w-xs mx-auto">
+          Explore nossos equipamentos e encontre sua próxima vitrola restaurada.
+        </p>
+        <a href="produtos.html" onclick="fecharCarrinho()" class="btn-primary inline-block px-6 py-2.5 rounded text-xs uppercase tracking-wider font-semibold">
+          Ver Produtos
+        </a>
+      </div>
+
+      <div id="carrinho-conteudo-cheio" class="flex flex-col flex-grow justify-between overflow-hidden hidden">
+        <div id="carrinho-itens" class="p-5 space-y-3 overflow-y-auto flex-grow"></div>
+        <div class="p-5 border-t border-brand-gold/20 bg-brand-black-soft space-y-4">
+          <div class="flex items-center justify-between text-sm">
+            <span class="uppercase tracking-wider text-brand-cream/70 font-medium">Subtotal Estimado</span>
+            <span id="carrinho-total-valor" class="font-serif text-2xl font-bold text-brand-cream-light">R$ 0,00</span>
+          </div>
+          <p class="text-[11px] text-brand-cream/50 flex items-center gap-1.5">
+            <i class="fa-solid fa-circle-check text-emerald-400"></i>
+            Garantia de 90 dias • Negociação e envio finalizados via WhatsApp
+          </p>
+          <button onclick="finalizarPedidoWhatsApp()" class="btn-whatsapp w-full py-3.5 px-4 rounded text-xs uppercase font-bold tracking-widest flex items-center justify-center gap-2 shadow-lg">
+            <i class="fa-brands fa-whatsapp text-base"></i>
+            <span>Enviar pelo WhatsApp</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/5511996176660" target="_blank" rel="noopener noreferrer" class="whatsapp-float group" aria-label="Fale conosco no WhatsApp" title="Fale com a Loucos por Vitrola">
+    <div class="whatsapp-pulse"></div>
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="absolute right-full mr-3 bg-brand-black-card text-brand-cream text-xs px-3 py-1.5 rounded border border-brand-gold/30 shadow-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none hidden sm:block">
+      Fale com nossa equipe no WhatsApp
+    </span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/produtos.js"></script>
+  <script src="js/carrinho.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
